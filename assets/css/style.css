@@ -245,8 +245,20 @@ input[type=submit] {
     border: 0 none;
 }
 
-@media (max-width: 980px) {}
+@media screen and (max-width: 980px) {}
 
-@media (max-width: 768px) {}
+@media screen and (max-width: 768px) {}
 
-@media (max-width: 640px) {}
+@media screen and (max-width: 640px) {
+    .main-section {
+        background-color: yellow;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .group:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
